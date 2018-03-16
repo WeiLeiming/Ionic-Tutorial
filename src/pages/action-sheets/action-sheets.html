@@ -10,4 +10,17 @@
   <button ion-button (click)="presentActionSheet()">
     Show Action Sheet
   </button>
+  <button ion-button (click)="pushNextPage()">
+    点我
+  </button>
+  <div *ngFor="let item of data">{{ item.name }}</div>
+  <ion-list>
+    <ion-item *ngFor="let item of data">
+      <h2>{{ item.name }}</h2>
+      <p>{{ item.description }}</p>
+      <p item-end>{{ item.gender ? '男' : '女' }}, {{ 2017 - item.birthYear }} 岁</p>
+    </ion-item>
+  </ion-list>
+  <ion-input placeholder="Input" [(ngModel)]="name"></ion-input>
+  <ion-label>{{ name }}</ion-label>
 </ion-content>
