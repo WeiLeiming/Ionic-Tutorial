@@ -10,6 +10,7 @@ import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { ListPage } from '../pages/list/list';
 import { ActionSheetsPage } from '../pages/action-sheets/action-sheets';
+import { LoginPage } from "../pages/login/login";
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ActionSheetsPage } from '../pages/action-sheets/action-sheets';
     HelloIonicPage,
     ItemDetailsPage,
     ListPage,
-    ActionSheetsPage
+    ActionSheetsPage,
+    LoginPage
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,8 @@ import { ActionSheetsPage } from '../pages/action-sheets/action-sheets';
     HelloIonicPage,
     ItemDetailsPage,
     ListPage,
-    ActionSheetsPage
+    ActionSheetsPage,
+    LoginPage
   ],
   providers: [
     StatusBar,
